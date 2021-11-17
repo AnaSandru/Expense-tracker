@@ -1,42 +1,36 @@
 import React from "react";
 import "../styles/Login.css";
 export const Login = () => {
-    return (
-        <>
-            <div class="wrapper fadeInDown">
-                <div id="formContent">
-                    
-                    <h2 class="active"> Sign In </h2>
-                    <h2 class="inactive underlineHover">Sign Up </h2>
-
-                    
-                    <div class="fadeIn first">
-                        <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
-                    </div>
-
-                    
-                    <form>
-                        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login" />
-                            <input type="text" id="password" class="fadeIn third" name="login" placeholder="password" />
-                                <input type="submit" class="fadeIn fourth" value="Log In" />
-                                </form>
-
-                                
-                                <div id="formFooter">
-                                    <a class="underlineHover" href="#">Forgot Password?</a>
-                                </div>
-
-                            </div>
-                        </div>
-        </>
-            )
-            
-            
-            
-            
-    
-  
-
-        
-    
-}
+  return (
+    <div className="loginform">
+      <form>
+        <h1> Login </h1>
+        <div className="form-group">
+          <label>Email</label>
+          <input type="text" className="form-control" />
+        </div>
+        <div className="form-group">
+          <label>Password</label>
+          <input type="password" className="form-control" />
+        </div>
+        <button type="submit" className="btn">
+          Submit
+        </button>
+      </form>
+      {/* <form>
+        <h1>Login Form</h1>
+        <div className="form-group">
+          <label>Email</label>
+          <input type="radio" className="form-control" />
+        </div>
+        <div className="form-group">
+          <label>Password</label>
+          <input type="password" className="form-control" />
+        </div>
+        <input type="submit" className="btn">
+          Submit
+        </input>
+      </form> */}
+    </div>
+  );
+};
